@@ -38,8 +38,9 @@ export class MappingsHttpClientV1 extends CommandableHttpClient implements IMapp
                 internal_id: internalId,
                 external_id: externalId,
                 ttl: timeToLive
-            },
-            callback
+            }, (err, res) => {
+                callback(err);
+            }
         );
     }
 
@@ -75,8 +76,9 @@ export class MappingsHttpClientV1 extends CommandableHttpClient implements IMapp
                 collection: collection,
                 internal_id: internalId,
                 external_id: externalId
-            },
-            callback
+            }, (err, res) => {
+                callback(err);
+            }
         );
     }
 

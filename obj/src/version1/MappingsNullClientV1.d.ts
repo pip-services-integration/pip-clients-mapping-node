@@ -8,5 +8,4 @@ export declare class MappingsNullClientV1 implements IMappingsClient {
     mapToExternal(correlationId: string, collection: string, internalId: string, callback: (err: any, externalId: string) => void): void;
     mapToInternal(correlationId: string, collection: string, externalId: string, callback: (err: any, internalId: string) => void): void;
     deleteMapping(correlationId: string, collection: string, internalId: string, externalId: string, callback: (err: any) => void): void;
-    deleteExpiredMappings(correlationId: string, callback: (err: any) => void): void;
 }

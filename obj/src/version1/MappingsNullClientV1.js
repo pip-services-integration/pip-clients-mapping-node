@@ -20,9 +20,6 @@ class MappingsNullClientV1 {
     deleteMapping(correlationId, collection, internalId, externalId, callback) {
         callback(null);
     }
-    deleteExpiredMappings(correlationId, callback) {
-        callback(null);
-    }
 }
 exports.MappingsNullClientV1 = MappingsNullClientV1;
 //# sourceMappingURL=MappingsNullClientV1.js.map

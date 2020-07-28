@@ -20,7 +20,9 @@ class MappingsHttpClientV1 extends pip_services3_rpc_node_1.CommandableHttpClien
             internal_id: internalId,
             external_id: externalId,
             ttl: timeToLive
-        }, callback);
+        }, (err, res) => {
+            callback(err);
+        });
     }
     mapToExternal(correlationId, collection, internalId, callback) {
         this.callCommand('map_to_external', correlationId, {
@@ -39,7 +41,9 @@ class MappingsHttpClientV1 extends pip_services3_rpc_node_1.CommandableHttpClien
             collection: collection,
             internal_id: internalId,
             external_id: externalId
-        }, callback);
+        }, (err, res) => {
+            callback(err);
+        });
     }
 }
 exports.MappingsHttpClientV1 = MappingsHttpClientV1;

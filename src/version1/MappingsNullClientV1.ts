@@ -22,9 +22,5 @@ export class MappingsNullClientV1 implements IMappingsClient {
     deleteMapping(correlationId: string, collection: string, internalId: string, externalId: string, callback: (err: any) => void) {
         callback(null);
     }
-    deleteExpiredMappings(correlationId: string, callback: (err: any) => void) {
-        callback(null);
-    }
-
 
 }
