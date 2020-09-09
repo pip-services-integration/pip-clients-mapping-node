@@ -10,13 +10,11 @@ import { MappingsMemoryClientV1 } from '../../src/version1/MappingsMemoryClientV
 import { MappingsClientV1Fixture } from './MappingsClientV1Fixture';
 
 
-suite('MappingsDirectClientV1', () => {
+suite('MappingsMemoryClientV1', () => {
     let client: MappingsMemoryClientV1;
     let fixture: MappingsClientV1Fixture;
 
     setup((done) => {
-
-
         client = new MappingsMemoryClientV1();
 
         let references = References.fromTuples(
